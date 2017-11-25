@@ -1,0 +1,20 @@
+{
+  "name": "donald-trump-twitter",
+  "version": "1.0.0",
+  "description": "Twitter client for retrieving tweets from donald trump for nlp",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "twitter",
+    "nlp",
+    "donald",
+    "trump"
+  ],
+  "author": "Billy Kong <billyklh@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "twitter": "^1.7.1"
+  }
+}
