@@ -15,6 +15,7 @@
   "author": "Billy Kong <billyklh@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.162.0",
     "twitter": "^1.7.1"
   }
 }
