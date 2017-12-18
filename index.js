@@ -1,5 +1,6 @@
 const GetAllTweets = require('./lib/get-all-tweets');
 
-exports.getAllTweets = (/* event, context, callback */) => {
-	GetAllTweets();
-};
+exports.getAllTweets = GetAllTweets;
+
+// const GetAllTweets = require('./lib/get-all-tweets');
+// GetAllTweets();
