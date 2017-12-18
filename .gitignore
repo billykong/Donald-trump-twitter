@@ -2,3 +2,4 @@ node_modules/*
 tmp/*
 dynamodb_local/*
 Archive.zip
+*.DS_Store
