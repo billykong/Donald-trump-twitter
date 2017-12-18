@@ -1,7 +1,9 @@
 {
-  "extends": "airbnb-base",
-  "plugins": ["prettier"],
-  "rules": {
-    "prettier/prettier": "error"
-  }
+	"extends": "airbnb-base",
+	"plugins": ["prettier"],
+	"rules": {
+		"no-tabs": 0,
+		"indent": ["off", 2],
+		"consistent-return": 0
+	}
 }
