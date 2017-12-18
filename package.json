@@ -4,18 +4,21 @@
   "description": "Twitter client for retrieving tweets from donald trump for nlp",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "lint": "eslint index.js lib/"
   },
-  "keywords": [
-    "twitter",
-    "nlp",
-    "donald",
-    "trump"
-  ],
+  "keywords": ["twitter", "nlp", "donald", "trump"],
   "author": "Billy Kong <billyklh@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.162.0",
     "twitter": "^1.7.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-prettier": "^2.4.0",
+    "prettier": "^1.9.2"
   }
 }
