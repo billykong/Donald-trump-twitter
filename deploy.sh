@@ -22,10 +22,9 @@ CLI_PROFILE_RC=$?
 WWW_BUCKET=$(jq -r '.WWW_BUCKET' config.json)
 
 
-#if a CLI Profile name is provided... use it.
-if [[ $CLI_PROFILE_RC == 0 ]]; then
+if [[ $CLI_PROFILE != 0 ]]; then
   echo "Setting session CLI profile to $CLI_PROFILE"
-  export AWS_DEFAULT_PROFILE=$CLI_PROFILE
+  export AWS_PROFILE=$CLI_PROFILE
 fi
 
 echo "Updating Lambda functions..."

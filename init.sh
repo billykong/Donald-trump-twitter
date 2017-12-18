@@ -18,14 +18,13 @@ fi
 AWS_ACCOUNT_ID=$(jq -r '.AWS_ACCOUNT_ID' config.json)
 CLI_PROFILE=$(jq -er '.CLI_PROFILE' config.json)
 # Get jq return code set by the -e option
-CLI_PROFILE_RC=$?
 REGION=$(jq -r '.REGION' config.json)
 WWW_BUCKET=$(jq -r '.WWW_BUCKET' config.json)
 DDB_PRODUCT_SCHEME_TABLE=$(jq -r '.DDB_PRODUCT_SCHEME_TABLE' config.json)
-#if a CLI Profile name is provided... use it.
-if [[ $CLI_PROFILE_RC == 0 ]]; then
+
+if [[ $CLI_PROFILE != 0 ]]; then
   echo "Setting session CLI profile to $CLI_PROFILE"
-  export AWS_DEFAULT_PROFILE=$CLI_PROFILE
+  export AWS_PROFILE=$CLI_PROFILE
 fi
 
 # Create DynamoDB Tables

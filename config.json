@@ -1,7 +1,6 @@
 {
-  "AWS_ACCOUNT_ID": "978397510092",
-  "REGION": "ap-southeast-1",
-  "WWW_BUCKET": "10life-product-importer-console",
-  "MAX_AGE": "10",
+  "CLI_PROFILE": "personal",
+  "AWS_ACCOUNT_ID": "643001202386",
+  "REGION": "us-east-1",
   "DDB_PRODUCT_SCHEME_TABLE": "donald-tweets"
 }
