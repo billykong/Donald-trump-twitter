@@ -3,6 +3,5 @@ exports.getAllTweets = (event, context, callback) => {
   GetAllTweets();
 };
 
-
 // const GetAllTweets = require('./lib/get-all-tweets');
 // GetAllTweets();
